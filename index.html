@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+    <title>My Profile</title>
+    <style>
+      #gambars {
+    background-image: url(skill.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: auto auto;
+}
+</style>
+  </head>
+  <body>
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // Get all "navbar-burger" elements
+      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(function ($el) {
+        $el.addEventListener('click', function () {
+
+          // Get the target from the "data-target" attribute
+          var target = $el.dataset.target;
+          var $target = document.getElementById(target);
+
+          // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+          $el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+      }
+
+      });
+    </script>
+    <section class="hero is-small is-light">
+      <div class="hero-body">
+
+      <div class="container has-text-centered">
+        <h1 class="avatar has-text-centered section">
+         <img src="foto.jpg" height="200px" width="200px">
+         </h1 >
+
+        <p class="title">
+          Title
+        </p>
+        <p class="subtitle">
+          Subtitle
+        </p>
+      </div>
+    </div>
+</section>
+    <section class="hero is-dark is-medium">
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-head">
+    <nav class="navbar ">
+      <div class="container">
+      <!-- <div class="container"> -->
+        <div class="navbar-brand">
+
+          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroA" class="navbar-menu">
+
+          <div class="navbar-end">
+            <a class="navbar-item is-active">
+              ABOUT
+            </a>
+            <a class="navbar-item">
+              MY SKILL
+            </a>
+            <a class="navbar-item">
+              MY EDUCATION
+            </a>
+            <a class="navbar-item">
+              CONTACT
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <p class="title is-dark">ABOUT ME</p>
+      <br/>
+    </div>
+    <div class="container has-text-right">
+      <div class="tile is-ancestor">
+  <div class="tile is-vertical is-8">
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-link">
+
+        <p class="subtitle">Job title</p>
+        <p class="subtitle">Web developer</p>
+        <div class="content">
+        <hr>
+        <p class="subtitle">Job title</p>
+        <p class="subtitle">Web developer</p>
+        <hr>
+        <p class="subtitle">Aligned with the right tile</p>
+        <p class="subtitle">Aligned with the right tile</p>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child notification is-link">
+      <div class="content">
+        <div class="content">
+          <h1 class="avatar has-text-centered section">
+           <img src="people.png" height="200px" width="200px">
+           </h1 >
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+    </div>
+  </div>
+  <section class="hero is-small is-link">
+    <div class="hero-body">
+
+    <div class="container has-text-centered">
+      <div class="columns is-mobile">
+        <div class="column">
+          <div class="box">
+            <h2 >
+              MY EDUCATION
+            </h2>
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <div class="columns">
+                    <div class="column">
+                      <p class="notification is-warning box">
+                        <span class="icon">
+                          <i class="fa fa-grav fa-2x"></i>1999-2000<strong>TK</strong><br/>
+                        </span>
+                      </p>
+
+                    </div>
+                    <div class="column is-info">
+                      <p class="notification is-info">
+                      <span class="icon">
+                        <i class="fa fa-grav fa-2x"></i><br/>2000-2006<strong>SD</strong>
+                      </span>
+                    </div>
+                    <div class="column">
+                      <p class="notification is-primary">
+                      <span class="icon">
+                        <i class="fa fa-grav fa-2x"></i>1999-2000<strong>TK</strong><br/>
+                      </span>
+                    </div>
+                    <div class="column">
+                      <p class="notification is-danger">
+                      <span class="icon">
+                        <i class="fa fa-grav fa-2x"></i>1999-2000<strong>TK</strong><br/>
+                      </span>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+                        <!-- SD
+                     2006-2009   SMP
+                     2009-2011   SMA
+                     2011-2015   KULI AH -->
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+        <div class="column notification box">
+          <article class="tile is-child notification">
+            <label class="label">HTML</label>
+            <progress class="progress is-primary" value="70" max="100"></progress>
+            <label class="label">CSS</label>
+            <progress class="progress is-info" value="80" max="100">CSS</progress>
+            <label class="label">JS</label>
+            <progress class="progress is-link" value="95" max="100">JS</progress>
+
+        </article>
+        </div>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- -------------------INI KOLOM-------------- -->
+<section class="hero is-small is-primary">
+  <div class="hero-body">
+    <div class="field is-horizontal">
+<div class="field-label is-normal">
+  <label class="label">From</label>
+</div>
+<div class="field-body">
+  <div class="field">
+    <p class="control is-expanded has-icons-left">
+      <input class="input" type="text" placeholder="Name">
+      <span class="icon is-small is-left">
+        <i class="fa fa-user"></i>
+      </span>
+    </p>
+  </div>
+  <div class="field">
+    <p class="control is-expanded has-icons-left has-icons-right">
+      <input class="input is-success" type="email" placeholder="Email" value="alex@smith.com">
+      <span class="icon is-small is-left">
+        <i class="fa fa-envelope"></i>
+      </span>
+      <span class="icon is-small is-right">
+        <i class="fa fa-check"></i>
+      </span>
+    </p>
+  </div>
+</div>
+</div>
+
+<div class="field is-horizontal">
+<div class="field-label"></div>
+<div class="field-body">
+  <div class="field is-expanded">
+    <div class="field has-addons">
+      <p class="control">
+        <a class="button is-static">
+          +44
+        </a>
+      </p>
+      <p class="control is-expanded">
+        <input class="input" type="tel" placeholder="Your phone number">
+      </p>
+    </div>
+    <p class="help">Do not enter the first zero</p>
+  </div>
+</div>
+</div>
+
+<div class="field is-horizontal">
+<div class="field-label is-normal">
+  <label class="label">Department</label>
+</div>
+<div class="field-body">
+  <div class="field is-narrow">
+    <div class="control">
+      <div class="select is-fullwidth">
+        <select>
+          <option>Business development</option>
+          <option>Marketing</option>
+          <option>Sales</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="field is-horizontal">
+<div class="field-label">
+  <label class="label">Already a member?</label>
+</div>
+<div class="field-body">
+  <div class="field is-narrow">
+    <div class="control">
+      <label class="radio">
+        <input type="radio" name="member">
+        Yes
+      </label>
+      <label class="radio">
+        <input type="radio" name="member">
+        No
+      </label>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="field is-horizontal">
+<div class="field-label is-normal">
+  <label class="label">Subject</label>
+</div>
+<div class="field-body">
+  <div class="field">
+    <div class="control">
+      <input class="input is-danger" type="text" placeholder="e.g. Partnership opportunity">
+    </div>
+    <p class="help is-danger">
+      This field is required
+    </p>
+  </div>
+</div>
+</div>
+
+<div class="field is-horizontal">
+<div class="field-label is-normal">
+  <label class="label">Question</label>
+</div>
+<div class="field-body">
+  <div class="field">
+    <div class="control">
+      <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="field is-horizontal">
+<div class="field-label">
+  <!-- Left empty for spacing -->
+</div>
+<div class="field-body">
+  <div class="field">
+    <div class="control">
+      <button class="button is-primary">
+        Send message
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+  </body>
+</html>
